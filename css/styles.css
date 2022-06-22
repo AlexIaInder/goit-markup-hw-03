@@ -17,6 +17,7 @@ html {
   --part-of-logo: #000000;
   --secondary-button-color:#F5F4FA;
   --border-color-head:#ECECEC;
+  --border-color-portfolio: #EEEEEE;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -66,6 +67,8 @@ header {
 .list {
   list-style: none;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 /* site-nav */
 .main-nav-cont {
@@ -143,13 +146,17 @@ margin-right: 50px;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+
 }
 .hero {
   background-color: var(--block-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .section {
-  padding: 94px 94px;
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 /* items effective way */
 .items-way {
@@ -214,6 +221,12 @@ margin-right: 50px;
     margin-bottom: 50px;
     text-align: center;
 }
+.text-team {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
 .name-team {
     font-weight: 500;
     font-size: 16px;
@@ -231,12 +244,18 @@ margin-right: 50px;
 /* footer */
 .footer {
   background-color: var(--block-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .map {
   color:var(--primary-bg-color);
   text-decoration: none;
     font-size: 14px;
     line-height: 1.7;
+    
+}
+.map-li {
+margin-top: 20px;
 }
 .info-footer {
   color: var(--info-color-footer);
@@ -326,7 +345,7 @@ min-width: 163px;
   }
 
   .btn-portfolio {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     text-align: center;
     display: flex;
     justify-content: center; 
@@ -334,6 +353,8 @@ min-width: 163px;
     .btn-portfolio .list-portfolio-btn:not(:last-child) {
     margin-right: 8px;
   }
+/*  class="item-portfolio" */
+     /* class="direction" */
   .li-portfolio {
  margin-bottom: 30px;
  width: 370px;
@@ -345,6 +366,10 @@ margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  items-li {
+    border: 1px solid var(--border-color-portfolio);
+    padding: 24px 20px 24px 20px;
   }
     /* .list-portfolio .li-portfolio:not(:last-child) {
       margin-right: 30px;
