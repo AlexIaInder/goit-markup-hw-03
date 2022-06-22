@@ -26,9 +26,11 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* h1,
 h2,
@@ -257,8 +259,8 @@ margin-right: 50px;
 /* Button */
 button {
   border-radius: 4px;
-text-align: center;
-
+ text-align: center;
+  border: 1px solid rgba(255, 255, 255, 1);
   font-family: inherit;
   cursor: pointer;
 }
@@ -282,6 +284,7 @@ text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
 .secondary-button:hover,
 .secondary-button:focus {
@@ -321,13 +324,32 @@ min-width: 163px;
   margin-top: 0;
   margin-bottom: 4px;
   }
+
+  .btn-portfolio {
+    margin-bottom: 34px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+  }
+    .btn-portfolio .list-portfolio-btn:not(:last-child) {
+    margin-right: 8px;
+  }
   .li-portfolio {
-  margin-bottom: 30px;
+ margin-bottom: 30px;
+ width: 370px;
+        }
+  .li-portfolio:nth-child(3n){
+margin-right: 0;
   }
   .list-portfolio {
-    margin-bottom: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-
+    /* .list-portfolio .li-portfolio:not(:last-child) {
+      margin-right: 30px;
+    } */
+    
 /* основной color: #212121; */
 /*вторичный цвет  color: #757575 */
 /* белый color: #FFFFFF; */
