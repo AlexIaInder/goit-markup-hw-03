@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+ box-sizing: inherit; 
+}
+
 :root {
   --primary-text-color:#212121;
   --primary-bg-color:#FFFFFF;
@@ -40,6 +49,7 @@ header {
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .logo-part {
   color:var(--accent-color);
@@ -56,14 +66,25 @@ header {
 }
 /* site-nav */
 .site-nav {
+    display: flex;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
+.site-nav .nav-item:not(:last-child) {
+margin-right: 50px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color:var(--accent-color);
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link {
@@ -78,11 +99,15 @@ header {
 }
 /* contact */
 .contact {
+  display: flex;
   color:var(--item-contact);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.contact .contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 .contact .info:hover,
 .contact .info:focus {
@@ -118,38 +143,53 @@ header {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .opacity {
   opacity: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+display: none;
+  cursor: pointer;
 }
 /* item */
 .item {
     color:var(--item-contact);
     font-size: 14px;
     line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .doing {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 /* team */
+.section-team {
+  background-color: var(--secondary-button-color);
+}
 .team {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 .name-team {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .item-team {
   color: var(--item-contact);
   font-size: 16px;
   line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 /* footer */
 .footer {
@@ -166,6 +206,8 @@ header {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .contact-footer .info-footer:hover,
 .contact-footer .info-footer:focus {
@@ -234,11 +276,21 @@ min-width: 163px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
   }
   .direction {
   color: var(--item-contact);
   font-size: 16px;
   line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 4px;
+  }
+  .li-portfolio {
+  margin-bottom: 30px;
+  }
+  .list-portfolio {
+    margin-bottom: 34px;
   }
 
 /* основной color: #212121; */
