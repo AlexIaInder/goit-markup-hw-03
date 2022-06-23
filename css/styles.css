@@ -52,7 +52,6 @@ header {
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 .logo-part {
   color:var(--accent-color);
@@ -356,7 +355,6 @@ min-width: 163px;
 /*   */
      /*  */
   .li-portfolio {
- margin-bottom: 30px;
  width: 370px;
         }
   .li-portfolio:nth-child(3n){
@@ -365,11 +363,12 @@ margin-right: 0;
   .list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
   }
-  items-li {
+.items-li {
     border: 1px solid var(--border-color-portfolio);
-    padding: 24px 20px 24px 20px;
+    padding: 20px;
+    margin-top: -5px;
   }
     /* .list-portfolio .li-portfolio:not(:last-child) {
       margin-right: 30px;
